@@ -2,7 +2,7 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom'; 
 import './App.css';
 import Main from './pages/home.js';
-import Calculator from './pages/Calculator.js';
+import Calculator from './pages/Investment/Calculator.js';
 import Navbar from './Layouts/navbar.js';
 
 function App() {

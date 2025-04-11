@@ -42,14 +42,14 @@ const Navbar = () => {
     { name: 'Home', path: '/' },
     { name: 'Calculator', path: '/calculator' },
     { name: 'Insurance', path: '/insurance' },
-    { name: 'Claims', path: '/claims' },
-    { name: 'Grievances', path: '/grievances' },
+    { name: 'Investment', path: '/investments' },
+    { name: 'FinanceInsight', path: '/financeInsight' },
   ];
 
   return (
     <nav style={navStyle}>
       <div style={containerStyle}>
-        <div style={logoStyle}>Finance Portal</div>
+        <div style={logoStyle}>MoneyGroww</div>
         <ul style={ulStyle}>
           {links.map((item) => (
             <li key={item.name}>
