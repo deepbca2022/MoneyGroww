@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // ✅ Import Link
 
 const Navbar = () => {
   const navStyle = {
@@ -29,27 +30,37 @@ const Navbar = () => {
     padding: 0,
   };
 
-  const liStyle = {
+  const linkStyle = {
     color: 'white',
-    fontWeight: "medium",
+    fontWeight: '500',
     fontSize: '18px',
-    cursor: 'pointer',
+    textDecoration: 'none',
     transition: 'color 0.2s ease-in-out',
   };
+
+  const links = [
+    { name: 'Home', path: '/' },
+    { name: 'Calculator', path: '/calculator' },
+    { name: 'Insurance', path: '/insurance' },
+    { name: 'Claims', path: '/claims' },
+    { name: 'Grievances', path: '/grievances' },
+  ];
 
   return (
     <nav style={navStyle}>
       <div style={containerStyle}>
         <div style={logoStyle}>Finance Portal</div>
         <ul style={ulStyle}>
-          {['SIP', 'SWP', 'Insurance', 'Claims', 'Grievances'].map((item) => (
-            <li
-              key={item}
-              style={liStyle}
-              onMouseEnter={(e) => (e.target.style.color = '#33fff6')}
-              onMouseLeave={(e) => (e.target.style.color = 'white')}
-            >
-              {item}
+          {links.map((item) => (
+            <li key={item.name}>
+              <Link
+                to={item.path}
+                style={linkStyle}
+                onMouseEnter={(e) => (e.target.style.color = '#33fff6')}
+                onMouseLeave={(e) => (e.target.style.color = 'white')}
+              >
+                {item.name}
+              </Link>
             </li>
           ))}
         </ul>
