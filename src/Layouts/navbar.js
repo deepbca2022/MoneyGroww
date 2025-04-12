@@ -49,7 +49,7 @@ const Navbar = () => {
   return (
     <nav style={navStyle}>
       <div style={containerStyle}>
-        <div style={logoStyle}>MoneyGroww</div>
+        <div style={logoStyle}>FinGroww</div>
         <ul style={ulStyle}>
           {links.map((item) => (
             <li key={item.name}>
