@@ -40,6 +40,7 @@ const Navbar = () => {
 
   const links = [
     { name: 'Home', path: '/' },
+    { name: 'Register', path: '/RegistrationPage' },
     { name: 'Calculator', path: '/calculator' },
     { name: 'Insurance', path: '/insurance' },
     { name: 'Investment', path: '/investments' },

@@ -1,5 +1,4 @@
 import React from 'react';
-import homeImage from './images/home page pic1.jpg'; // Adjust if you rename the file
 
 function Main() {
   return (
@@ -17,13 +16,13 @@ function Main() {
         >
           <h3>Lorem lorem lorem lorem lorem lorem lorem lorem</h3>
         </div>
-        <div style={{ width: '50%' }}>
+        {/* <div style={{ width: '50%' }}>
           <img
             src={homeImage}
             alt='Family'
             style={{ width: '100%', height: '100%', objectFit: 'cover' }}
           />
-        </div>
+        </div> */}
       </div>
     </>
   );
