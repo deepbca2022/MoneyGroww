@@ -6,6 +6,8 @@ import RegistrationPage from './pages/User/registration.js';
 import Calculator from './pages/Investment/Calculator.js';
 import Navbar from './Layouts/navbar.js';
 import UserDashboard from './pages/User/dashboard.js';
+import InsuranceForm from './pages/Insurance/insPurchase-start.js';
+import DetailedForm from './pages/Insurance/insPurchase.js';
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
         <Route path="/RegistrationPage" element={<RegistrationPage />} />
         <Route path="/calculator" element={<Calculator />} />
         <Route path="/UserDashboard" element={<UserDashboard />} />
+        <Route path="/InsuranceForm" element={<InsuranceForm />} />
+        <Route path="/DetailedForm" element={<DetailedForm />} />
       </Routes>
     </>
   );
